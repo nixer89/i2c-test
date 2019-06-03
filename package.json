@@ -1,0 +1,23 @@
+{
+  "name": "i2c-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nixer89/i2c-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nixer89/i2c-test/issues"
+  },
+  "homepage": "https://github.com/nixer89/i2c-test#readme",
+  "dependencies": {
+    "i2c-bus": "^4.0.9",
+    "raspi": "^6.0.1"
+  }
+}
