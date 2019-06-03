@@ -1,7 +1,5 @@
-const raspi = require('raspi');
-const I2C = require('raspi-i2c').I2C;
- 
-raspi.init(() => {
-  const i2c = new I2C();
-  console.log(i2c.readByteSync(0x18)); // Read one byte from the device at address 18
-});
+const i2c = require('i2c-bus');
+
+const i2c1 = i2c.openSync(1);
+console.log(i2c1.readByteSync(0x01,0xa7));
+i2c1.close();
