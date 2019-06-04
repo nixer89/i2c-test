@@ -22,10 +22,8 @@ function readNfcData() {
 
 function writeNfcData() {
 	const newText = "instant.dncash.io?triggercode=das-ist-ein-test";
-	const byteBuffer = Buffer.from(newText);
+	const byteBuffer = Buffer.from([0xb,0x0,...newText]);
 
 	const i2c1 = i2c.openSync(1);
-	for(let i = 0; i < byteBuffer.length;i++) {
-		i2c1.writeByteSync(0x53,0x21,byteBuffer[i]);
-	}
+	i2c1.writeByteSync(0x53,0x21,byteBuffer);
 }
