@@ -18,6 +18,7 @@
   "homepage": "https://github.com/nixer89/i2c-test#readme",
   "dependencies": {
     "i2c-bus": "^4.0.9",
+    "ndef": "^0.2.0",
     "raspi": "^6.0.1"
   }
 }
